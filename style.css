@@ -1,0 +1,64 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    max-width: 1400px;
+    width: 95%;
+    padding: 10px 20px;
+    margin: 20px auto;
+
+}
+
+#logo {
+    height: 75px;
+}
+
+#titulo {
+    font-size: 24px;
+    margin: 0;
+    font-family: "kanit", serif;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url(fondo.jpg);
+}
+
+#mensaje {
+    font-family: "kanit", serif;
+    font-weight: 200;
+    margin: 5px 0;
+    font-size: 40px;
+    color: white;
+}
+
+footer {
+    background-color: #373535;
+    color: white;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#numero {
+    font-family: "kanit", serif;
+    font-weight: 400;
+}
