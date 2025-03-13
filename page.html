@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Color</title>
+    <script>
+        window.onload = function () {
+            // Obtener el color desde la URL
+            const params = new URLSearchParams(window.location.search);
+            const color = params.get('color');
+
+            // Validar si el color es un código hexadecimal válido
+            const isValidColor = /^#([0-9A-F]{3}){1,2}$/i.test(color);
+
+            // Si es un color válido, aplicarlo como fondo
+            if (isValidColor) {
+                document.body.style.backgroundColor = color;
+            } else {
+                document.body.style.backgroundColor = 'white'; // Color por defecto
+            }
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>

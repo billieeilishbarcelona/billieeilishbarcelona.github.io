@@ -1,0 +1,62 @@
+/* Fuente personalizada */
+@font-face {
+    font-family: 'Neue Helvetica';
+    src: url('neue-helvetica-95-black.otf') format('opentype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Estilo todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #15162d;
+    border-bottom: 3px solid orange;
+}
+
+/* Estilo body */
+body {
+    background-color: #040420;
+    justify-content: center;
+    justify-items: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los botones horizontalmente */
+    gap: 15px; /* Espacio entre botones */
+    margin-top: 20px; /* Margen superior opcional */
+}
+
+
+
+/* Estilo imagen logo */
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #324490;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    font-family: 'Neue Helvetica';
+    font-weight: 100;
+    font-size: 14;
+    color: white;
+    width: 250px;
+    height: 50px;
+}

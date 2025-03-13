@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="billielogo.png">
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit Me Hard And Soft Barcelona</title>
+</head>
+
+<header>
+    <a href="https://billieeilishbarcelona.github.io"><img src="billielogo.png" alt="" width="50px" class="logo" href="www.billieeilishbarcelona.github.io"></a>
+</header>
+
+<body>
+    <div class="button-container">
+        <button onclick="goToPage('#ff0000')">Sector X01, X02, X15 & X16</button>
+        <button onclick="goToPage('#ff9700')">Sector X03, X04, X17 & X18</button>
+        <button onclick="goToPage('#ffee00')">Sector X05, X06, X19 & X20</button>
+        <button onclick="goToPage('#47ff00')">Sector X07, X08, X21 & X22</button>
+        <button onclick="goToPage('#00e2ff')">Sector X09, X10, X23 & X24</button>
+        <button onclick="goToPage('#0026ff')">Sector X11, X12, X25 & X26</button>
+        <button onclick="goToPage('#d300ff')">Sector X13 & X14</button>
+        <button onclick="goToRandomColor()">Pista</button>
+    </div>
+    <script>
+        function goToPage(color) {
+            window.location.href = `page.html?color=${encodeURIComponent(color)}`;
+        }
+
+        function goToRandomColor() {
+            const colors = ['#ff0000', '#ff9700', '#ffee00', '#47ff00', '#00e2ff', '#0026ff', '#d300ff'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            window.location.href = `page.html?color=${encodeURIComponent(randomColor)}`;
+        }
+    </script>
+</body>
+</html>
